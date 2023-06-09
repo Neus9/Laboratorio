@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Laboratorio</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<h1> Create Account </h1>
+	 
+	<form method="POST" action="registro.php" onsubmit="return validarFormulario()">
+		<label for="nombre">Nombre: </label>
+		<input type="text" name="nombre" id="nombre" placeholder="(Requerido)"required/>
+		<span id="nombreError" class="error-message"></span>
+
+		<label for="apellido_1">Primer Apellido: </label>
+		<input type="text" name="apellido_1" id="apellido_1"  placeholder="(Requerido)" required/>
+<span id="apellido_1Error" class="error-message"></span> 
+
+		<label for="apellido_2">Segundo Apellido: </label>
+		<input type="text" name="apellido_2" id="apellido_2" placeholder="(Requerido)" required/>
+		<span id="apellido_2Error" class="error-message"></span>
+
+		<label for="email">Email: </label>
+		<input type="email" name="email" id="email" placeholder="(Requerido)" required/>
+ <span id="emailError" class="error-message"></span>
+
+		<label for="login">Login: </label>
+		<input type="text" name="login" id="login" placeholder="(Requerido)" required/>
+<span id="loginError" class="error-message"></span>
+
+		<label for="password">Password: <span><em> (entre 4 y 8 caracteres)</em></span></label>
+		<input type="password" name="password" id="password" minlength="4" maxlength="8" placeholder="(Requerido)" required/>
+		<span id="passwordError" class="error-message"></span>
+
+		<input type="submit" name= "submit" value="Suscribirse">
+		<input type="reset" value="Resetear">
+		
+	</form>
+
+	<a href="consulta.php" class="btn-consulta">Consulta</a>
+
+</body>
+</html>
